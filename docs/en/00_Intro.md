@@ -1,49 +1,47 @@
-# Section 0: Mathematical Foundations
+Let's break down these vector calculations step-by-step.
 
-## 1. Vector Algebra
+a) The magnitude of each vector
 
-Given two vectors in 3D space: $\vec{a} = [2, 1, -3]$ and $\vec{b} = [4, -2, 1]$. Calculate:
+The magnitude of a 3D vector $$[x, y, z]$$ is given by the formula $$\sqrt{x^2 + y^2 + z^2}$$.
 
-a) The magnitude of each vector.
+For $$\vec{a} = [2, 1, -3]$$:
+$$||\vec{a}|| = \sqrt{2^2 + 1^2 + (-3)^2} = \sqrt{4 + 1 + 9} = \sqrt{14} \approx 3.74$$
 
-b) The dot product $\vec{a} \cdot \vec{b}$.
+For $$\vec{b} = [4, -2, 1]$$:
+$$||\vec{b}|| = \sqrt{4^2 + (-2)^2 + 1^2} = \sqrt{16 + 4 + 1} = \sqrt{21} \approx 4.58$$
 
-c) The cross product $\vec{a} \times \vec{b}$.
+b) The dot product $$\vec{a} \cdot \vec{b}$$
 
-d) The angle between vectors $\vec{a}$ and $\vec{b}$.
+The dot product of two vectors $$\vec{a} = [ax, ay, az]$$ and $$\vec{b} = [bx, by, bz]$$ is given by $$ax bx + ay by + az bz$$.
 
-## 2. Systems of Equations
+$$\vec{a} \cdot \vec{b} = (2)(4) + (1)(-2) + (-3)(1) = 8 - 2 - 3 = 3$$
 
-Find the values of $x$ and $y$ that satisfy both equations: $2x + 3y = 12$ and $x - y = 1$.
+c) The cross product $$\vec{a} \times \vec{b}$$
 
-## 3. Proportionality
+The cross product of two vectors $$\vec{a} = [ax, ay, az]$$ and $$\vec{b} = [bx, by, bz]$$ is given by the formula:
+$$ \vec{a} \times \vec{b} = [ (ay bz - az by), (az bx - ax bz), (ax by - ay bx) ] $$
 
-Consider the Universal Law of Gravitation: $F = G \frac{m_1 m_2}{r^2}$, where $F$ is the gravitational force between two masses $m_1$ and $m_2$, $r$ is the distance between their centers, and $G$ is the gravitational constant. Determine the factor by which the force $F$ changes if the distance $r$ is *doubled* and both masses ($m_1$ and $m_2$) are *halved*.
+Let's plug in the values:
+$$ \vec{a} \times \vec{b} = [ ((1)(1) - (-3)(-2)), ((-3)(4) - (2)(1)), ((2)(-2) - (1)(4)) ] $$
+$$ \vec{a} \times \vec{b} = [ (1 - 6), (-12 - 2), (-4 - 4) ] $$
+$$ \vec{a} \times \vec{b} = [ -5, -14, -8 ] $$
 
-## 4. Rearranging Formulas
+d) The angle between vectors $$\vec{a}$$ and $$\vec{b}$$
 
-The formula for the period of a simple pendulum is $T = 2\pi \sqrt{\frac{L}{g}}$. Rearrange the equation give a formula for $g$ (acceleration due to gravity).
+The angle $$\theta$$ between two vectors can be found using the dot product formula:
+$$\vec{a} \cdot \vec{b} = ||\vec{a}|| \cdot ||\vec{b}|| \cdot \cos(\theta)$$
+So,
+$$\cos(\theta) = \frac{\vec{a} \cdot \vec{b}}{||\vec{a}|| \cdot ||\vec{b}||}$$
 
-## 5. Trigonometry
+We already calculated:
+   $$\vec{a} \cdot \vec{b} = 3$$
+   $$||\vec{a}|| = \sqrt{14}$$
+• $$||\vec{b}|| = \sqrt{21}$$
 
-A vector $\vec{A}$ has a magnitude of $15$ and makes an angle of $\theta = 60^\circ$ with the horizontal axis. Calculate its horizontal and vertical components.
+Now, substitute these values:
+$$\cos(\theta) = \frac{3}{\sqrt{14} \cdot \sqrt{21}} = \frac{3}{\sqrt{294}}$$
+$$\cos(\theta) = \frac{3}{17.1464} \approx 0.17496$$
 
-## 6. Function Analysis
-
-Consider the function $f(x) = 3x^2 - 12x + 7$. Identify any local maxima or minima.
-
-## 7. Logic & Series
-
-A bicycle is 10 meters from a wall and moves towards it at a constant speed of $1\text{ m/s}$. A fly starts from the bicycle's front wheel and flies towards the wall at $2\text{ m/s}$. When it hits the wall, it instantly turns back and flies to the bicycle, and so on. What is the total distance the fly travels before being crushed?
-
-## 8. Definite Integrals
-
-Calculate the area under the curve of the function $f(x) = \sin(x)$ from $x=0$ to $x=\pi$.
-
-## 9. Optimization Problem
-
-A rectangle is under the curve $y = 3 - x^2$ in the first quadrant. What are the dimensions of the rectangle with the maximum area?
-
-## 10. Infinite Series
-
-Determine the final position of an ant that starts at the origin and moves according to the following pattern: 1 m east, 1/2 m north, 1/3 m west, 1/4 m south, 1/5 m east, and so on.
+To find $$\theta$$, we take the inverse cosine:
+$$\theta = \arccos(0.17496) \approx 1.393 \text{ radians}$$
+$$\theta \approx 79.82^\circ$$
